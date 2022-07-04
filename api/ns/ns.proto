@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package ns;
+
+option go_package = "idserver/api/ns;ns";
+
+// NumberServer is the number-server service.
+service NumberServer {
+	// GetSequenceNum returns a sequence number.
+	rpc GetSequenceNum(GetSequenceNumRequest) returns (GetSequenceNumResponse) {}
+
+	// PutSequenceNum put a sequence number back to pool.
+	rpc PutSequenceNum(PutSequenceNumRequest) returns (PutSequenceNumResponse) {}
+}
+
+message GetSequenceNumRequest {}
+
+message GetSequenceNumResponse {
+	uint32 number = 1;
+}
+
+message PutSequenceNumRequest {
+	uint32 number = 1;
+}
+
+message PutSequenceNumResponse {}

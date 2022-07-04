@@ -1,0 +1,12 @@
+
+version: v1beta1
+name: buf.build/seaman/idserver
+build:
+  roots:
+    - api/ns
+lint:
+  use:
+    - DEFAULT
+deps:
+  - buf.build/beta/googleapis
+  - buf.build/grpc-ecosystem/grpc-gateway
