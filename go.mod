@@ -1,4 +1,4 @@
-module idserver
+module github.com/Seaman-hub/idserver
 
 go 1.16
 
