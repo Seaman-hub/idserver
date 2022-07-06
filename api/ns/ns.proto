@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ns;
 
-option go_package = "idserver/api/ns;ns";
+option go_package = "github.com/Seaman-hub/idserver/api/ns;ns";
 
 // NumberServer is the number-server service.
 service NumberServer {
